@@ -1,0 +1,51 @@
+/*.container
+{
+    width: 359px;
+    height: 493px;
+    background: white;
+    margin-left: 543px;
+    margin-top: 45px;
+}*/
+#screenText
+{
+    /*width: 355px;*/
+    border: none;
+   /* height: 35px;*/
+    background: white;
+    /*padding-top: 30px;*/
+    pointer-events: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+.butClear{
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 60px;
+}
+table{
+    margin-top: 100px;
+}
+table,td{
+    border: 1px solid black;
+}
+
+.butOperators{
+    background-color: blue;
+    color: white;
+    width: 50px;
+    height: 35px;
+}
+.but
+{
+    width:176px;;
+    height: 35px;
+
+    background-color: blue;
+    color: white;
+}
+.buttontext
+{
+    font-size: large;
+    font-weight: bold;
+}

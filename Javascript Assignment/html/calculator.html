@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/calculator.css" type="text/css">
+    <script src="../js/calculator.js"></script>
+</head>
+
+<body>
+    <div class="Mainbody">
+        <div class="container">
+            <!--table to include the buttons-->
+            <table >
+                <h1>Calculator</h1>
+                <tr>
+                    <td><button class="butClear" onclick="clearfunction()">C</button></td>
+                    <td colspan="3" rowspan=""><input type="text" id="screenText"></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="clickbutton('+')"class="butOperators"><label class="buttontext">+</label></button></td>
+                    <td ><button onclick="clickbutton(1)"class="but"><label class="buttontext">1</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(2)"class="but"><label class="buttontext">2</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(3)"class="but"><label class="buttontext">3</label></button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="clickbutton('-')"class="butOperators"><label class="buttontext">-</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(4)"class="but"><label class="buttontext">4</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(5)"class="but"><label class="buttontext">5</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(6)"class="but"><label class="buttontext">6</label></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="clickbutton('*')"class="butOperators"><label class="buttontext">*</label></button></td>
+                    <td colspan=""><button  onclick="clickbutton(7)"class="but"><label class="buttontext">7</label></button></td>
+                    <td colspan=""><button  onclick="clickbutton(8)"class="but"><label class="buttontext">8</label></button></td>
+                    <td colspan=""><button  onclick="clickbutton(9)"class="but"><label class="buttontext">9</label></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="clickbutton('/')"class="butOperators"><label class="buttontext">/</label></button></td>
+                    <td colspan=""><button onclick="clickbutton('.')"class="but"><label class="buttontext">.</label></button></td>
+                    <td colspan=""><button onclick="clickbutton(0)"class="but"><label class="buttontext">0</label></button></td>
+                    <td colspan=""><button onclick="clickequal()"class="but"><label class="buttontext">=</label></button></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

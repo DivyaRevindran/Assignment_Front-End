@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/RegistrationForm.css" type="text/css">
+</head>
+<body>
+    <!--form-->
+    <div class="container customContainer">
+        <h1>Registration Form</h1>
+        <hr>
+        <form id="frmEmployee">
+            <!--FullName-->
+            <div class="form-group">
+                <label for="fullName"><b>Full Name</b></label>
+                <input type="text" id="txtFullName" name="txtFullName" class="form-control" placeholder="Full Name">
+                <span id="fullNameError" class="error"></span>
+            </div>
+            <!--Email Address-->
+            <div class="form-group">
+                <label for="email"><b>Email Address</b></label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-control" placeholder="Email address">
+                <span id="emailError" class="error"></span>
+            </div>
+            <!--Phone number-->
+            <div class="form-group">
+                <label for="phone"><b>Phone(Enter only 10 digit number)</b></label>
+                <input type="tel" id="telPhone" name="telPhone" class="form-control" placeholder="Phone number" pattern="[0-9]">
+                <span id="phoneError" class="error"></span>
+            </div>
+            
+            <!--Password-->
+            <div class="form-group ">
+                <label for="pswrd"><b>Password</b></label>
+                <input type="password" id="pswrd" name="pswrd" class="form-control" placeholder="password">
+                <span id="passwordError" class="error"></span>
+            </div>
+             <!--Confirm Password-->
+             <div class="form-group ">
+                <label for="confirmPswrd"><b>confirm Password</b></label>
+                <input type="password" id="confirmPswrd" name="confirmPswrd" class="form-control" placeholder="confirm password" onkeyup="validatePassword()">
+                <span id="confirmPswrdError" class="error"></span>
+            </div>
+            <!--Submit-->
+            <button type="submit" class="btn btn-primary" >REGISTER</button>
+            <button type="reset" class="btn btn-danger mr-auto reset">RESET</button></div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../js/RegistrationForm.js"></script>
+    
+</body>
+</html>
