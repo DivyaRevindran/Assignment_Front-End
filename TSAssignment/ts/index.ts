@@ -2,10 +2,8 @@ import { Rocket} from "./rocket.js";
 import { Astronaunt } from "./astronaut.js";
 import { Cargo } from "./cargo.js";
 
-let choice
-let astronaunt=new Astronaunt(50,'miya')
-//create object of cargo
-let cargo=new Cargo(30,'mat')
+let choice;
+
 let rocketName=window.prompt("Enter the name of the rocket")
 let totalCapacity=window.prompt("Enter the total capacity of the rocket")
 
@@ -24,12 +22,12 @@ if(choice=="2"){
     let name=window.prompt("Enter the material name")
     let mass=window.prompt("Enter the mass of material")
     //create object of astronaunt
-    let caegot=new Astronaunt(parseInt(mass),name)
+    let cargo=new Astronaunt(parseInt(mass),name)
     rocket.addCargo(cargo)
 }
 
 
-}while(choice!="3")
+}while(choice!="3");
 
 console.log(rocket.cargoItems);
 console.log(rocket.astronauts);
